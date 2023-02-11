@@ -93,13 +93,13 @@ http://44.208.152.202
 
 **Allow SSH connections from my home**  
 
-Security Groups > Inbound > Edit > Add Rule  
+- Security Groups > Inbound > Edit > Add Rule  
   
 
-Type > SSH  
+- Type > SSH  
 
 
-Source > “0.0.0.0/32”
+- Source > “0.0.0.0/32”
 
 
 
