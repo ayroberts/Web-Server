@@ -1,7 +1,7 @@
 # Web-Server
 System Administration - Project 1
 
--Part 1: Creating Web Server
+-- Part 1: Creating Web Server
 
 Command used to send files to AWS
 scp -i labsuser.pem index.html ubuntu@44.208.152.202:~/
