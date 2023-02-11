@@ -1,5 +1,6 @@
 # Web-Server
-*System Administration - Project 1*
+*System Administration - Project 1*  
+  
 
 **Part 1: Creating Web Server**
 
@@ -12,21 +13,26 @@ sudo apt-get install apache2
 
 **Start Apache**
 sudo systemctl start apache2
-sudo systemctl status apache2
-</br>
+sudo systemctl status apache2  
+  
+
 The HTTP server will run on port 80 by default
 
 Serves content from /var/www/html
 
-Config file is called ‘apache2.conf’
-</br>
+Config file is called ‘apache2.conf’  
+  
+
+
 http://44.208.152.202
 
 Set permissions
 sudo groupadd devs
 sudo usermod -a -G devs ubuntu
 sudo chmod -R g+rwx /var/www/html
-</br>
+</br>  
+  
+
 **Part 2: HTTPS**
 
 **Generate a private key**
@@ -45,8 +51,9 @@ sudo nano /etc/apache2/apache2.conf
 	-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 sudo systemctl restart apache2
 
-**This actually broke my server, and tbh it’s not worth my time to figure out why it doesn’t work. I tried and couldn’t get it, so no HTTPS for me.**
-</br>
+**This actually broke my server, and tbh it’s not worth my time to figure out why it doesn’t work. I tried and couldn’t get it, so no HTTPS for me.**  
+  
+
 **Part 3: Firewall**
 
 **Allow SSH connections from my home**
